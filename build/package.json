@@ -1,0 +1,18 @@
+{
+    "name": "hp-ui",
+    "version": "0.0.0",
+    "main": "hp-ui.umd.js",
+    "module": "hp-ui.es.js",
+    "author": "yafengHe",
+    "github": "",
+    "description": "羊村第一个组件库Sheep-UI，以后村里羊圈能不能建好就看它了！",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/yafengHe/hp-ui"
+    },
+    "keywords": ["vue3", "组件库", "tsx", "UI"],
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/yafengHe/sheep-ui/hp-ui"
+    }
+  }

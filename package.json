@@ -1,7 +1,7 @@
 {
-  "name": "hp-ui",
-  "private": true,
-  "version": "0.0.0",
+  "name": "vue3-hp-ui",
+  "private": false,
+  "version": "0.1.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -10,12 +10,15 @@
     "prepare": "husky install",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:serve": "vitepress serve docs",
+    "test": "vitest",
+    "build:components": "node ./scripts/build.js"
   },
   "dependencies": {
     "vue": "^3.2.25"
   },
   "devDependencies": {
+    "@testing-library/vue": "^6.6.0",
     "@types/node": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
@@ -26,6 +29,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^9.1.1",
+    "happy-dom": "^5.3.1",
     "husky": ">=6",
     "lint-staged": ">=10",
     "postcss": "^8.4.14",
@@ -36,6 +40,7 @@
     "vite": "^2.9.9",
     "vitepress": "^1.0.0-alpha.2",
     "vitepress-theme-demoblock": "^1.4.2",
+    "vitest": "^0.16.0",
     "vue-tsc": "^0.34.7"
   },
   "lint-staged": {

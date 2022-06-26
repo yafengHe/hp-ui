@@ -2,22 +2,20 @@
  * @Author: Heyafeng
  * @Date: 2022-06-25 15:15:21
  * @LastEditors: Heyafeng
- * @LastEditTime: 2022-06-25 15:39:07
- * @Description: 主题配置文件
+ * @LastEditTime: 2022-06-26 13:25:57
+ * @Description: file content
  */
 import Theme from 'vitepress/theme'
-// 主题样式
-import 'vitepress-theme-demoblock/theme/styles/index.css'
-import HelloWorld from '../../../src/components/HelloWorld.vue'
-// 插件的组件，主要是demo组件
-import Demo from 'vitepress-theme-demoblock/components/Demo.vue'
-import DemoBlock from 'vitepress-theme-demoblock/components/DemoBlock.vue'
+import './demo-block.scss'
+import { registerComponents } from './register-components'
+import HpUI from '../../../src/index'
 
 export default {
   ...Theme,
+  // 扩展应用程序实例
   enhanceApp({ app }) {
-    app.component('HelloWorld', HelloWorld)
-    app.component('Demo', Demo)
-    app.component('DemoBlock', DemoBlock)
+    // 注册组件
+    registerComponents(app)
+    app.use(HpUI)
   }
 }

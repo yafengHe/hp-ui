@@ -2,7 +2,7 @@
  * @Author: Heyafeng
  * @Date: 2022-06-25 14:41:07
  * @LastEditors: Heyafeng
- * @LastEditTime: 2022-06-25 15:18:47
+ * @LastEditTime: 2022-06-26 12:46:24
  * @Description: vitepress侧边栏配置
  */
 const sidebar = {
@@ -18,7 +18,10 @@ const sidebar = {
       text: '数据录入',
       items: [{ text: 'Input 输入框', link: '/components/input/' }]
     },
-    { text: '数据展示', items: [] },
+    {
+      text: '数据展示',
+      items: [{ text: 'Tree 树', link: '/components/tree/' }]
+    },
     {
       text: '布局',
       items: [{ text: 'Space 间距', link: '/components/space/' }]
